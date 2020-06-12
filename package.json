@@ -1,0 +1,52 @@
+{
+  "name": "gbnscript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "dev": "tsc --watch",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Yuki Kishino",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyyk/gbnscript.git"
+  },
+  "dependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.4",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "<rootDir>/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "fixtures",
+      "fixtures.ts"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test && npm run build"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.3"
+  }
+}

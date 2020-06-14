@@ -177,11 +177,9 @@ scaleY
 if:
 
 ```
-if condition1 then statement1 end
-
 if condition1 then
-  statement1
-  statement2
+  // statement1
+  // statement2
 end
 ```
 
@@ -189,10 +187,10 @@ if + else:
 
 ```
 if condition1 then
-  statement1
-  statement2
+  // statement1
+  // statement2
 else
-  statement3
+  // statement3
 end
 ```
 
@@ -200,13 +198,13 @@ if + elsif (+ elsif...) + else:
 
 ```
 if condition1 then
-  statement1
-  statement2
+  // statement1
+  // statement2
 elsif condition2 then
-  statement3
-  statement4
+  // statement3
+  // statement4
 else
-  statement5
+  // statement5
 end
 ```
 
@@ -214,6 +212,7 @@ end
 
 ```
 repeat i from 0 to 10 do
+  // statement
 end
 ```
 
@@ -223,6 +222,7 @@ arguments: `width`, `height`
 
 ```
 size width 600 height 600
+  // statement
 end
 ```
 
@@ -232,6 +232,7 @@ arguments: `positionX`, `positionY`, `rotate`, `scale`, `scaleX`, `scaleY`
 
 ```
 group
+  // argument
 end
 ```
 

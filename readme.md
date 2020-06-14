@@ -79,24 +79,24 @@ false
 
 ```
 set a 1
-set a 1 + 1 // interpreted as 'set a 2'
-set a true
-set a false
+set b 1 + 1 // interpreted as 'set a 2'
+set c true
+set d false
 ```
 
 ### variable assign
 
 ```
 update a 2
-update a 2 + 2 // interpreted as 'update a 4'
-update a false
-update a true
+update b 2 + 2 // interpreted as 'update a 4'
+update c false
+update d true
 ```
 
 ### comparison and logical operations
 
 ```
-not a
+not c
 
 a == b
 a != b
@@ -107,8 +107,8 @@ a >= b
 a < b
 a <= b
 
-a and b
-a or b
+c and d
+c or d
 ```
 
 ### semicolon
@@ -246,9 +246,10 @@ scaleY
 ```
 
 ### TODO:
-  - put all the error messages in `error.ts`
-  - setting color
-  - step option for `repeat`
-  - print function for logging purpose
-  - maths functions `floor`, `ceil`, `round` as prefix expression
-  - string literal
+
+- put all the error messages in `error.ts`
+- setting color
+- step option for `repeat`
+- print function for logging purpose
+- maths functions `floor`, `ceil`, `round` as prefix expression
+- string literal

@@ -79,7 +79,7 @@ false
 
 ```
 set a 1
-set b 1 + 1 // interpreted as 'set a 2'
+set b 1 + 1 // interpreted as 'set b 2'
 set c true
 set d false
 ```
@@ -88,7 +88,7 @@ set d false
 
 ```
 update a 2
-update b 2 + 2 // interpreted as 'update a 4'
+update b 2 + 2 // interpreted as 'update b 4'
 update c false
 update d true
 ```

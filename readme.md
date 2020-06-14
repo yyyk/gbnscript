@@ -63,8 +63,8 @@ end
 2 ** 3
 
 // precedence of operators
-1 + 2 * 3 // => 7
-(1 + 2) * 3 // => 9
+1 + 2 * 3   // 7
+(1 + 2) * 3 // 9
 ```
 
 ### boolean expression
@@ -79,7 +79,7 @@ false
 
 ```
 set a 1
-set a 1 + 1 // => a = 2
+set a 1 + 1 // interpreted as 'set a 2'
 set a true
 set a false
 ```
@@ -88,7 +88,7 @@ set a false
 
 ```
 update a 2
-update a 2 + 2 // => a = 4
+update a 2 + 2 // interpreted as 'update a 4'
 update a false
 update a true
 ```
@@ -126,6 +126,79 @@ In the case below, `set a 1` is first executed and `-a` would be interpreted as 
 ```
 set a 1;
 -a
+```
+
+### if-elsif-else conditionals
+
+if:
+
+```
+if condition1 then
+  // statements
+end
+```
+
+if + else:
+
+```
+if condition1 then
+  // statements
+else
+  // statements
+end
+```
+
+if + elsif (+ elsif...) + else:
+
+```
+if condition1 then
+  // statements
+elsif condition2 then
+  // statements
+else
+  // statements
+end
+```
+
+### repeat
+
+```
+repeat i from 0 to 10 do
+  // statements
+end
+```
+
+### size
+
+arguments: `width`, `height`
+
+```
+size width 600 height 600
+  // statements
+end
+```
+
+### group
+
+arguments: `positionX`, `positionY`, `rotate`, `scale`, `scaleX`, `scaleY`
+
+```
+group
+  // arguments (arguments have to be before statements)
+  // statements
+end
+```
+
+### rectangle
+
+arguments: `width`, `height`, `positionX`, `positionY`, `rotate`, `scale`, `scaleX`, `scaleY`
+
+```
+rectangle
+  width 200 height 200
+  positionX 0 positionY 0
+  // arguments
+end
 ```
 
 ### reserved words
@@ -170,81 +243,6 @@ rotate
 scale
 scaleX
 scaleY
-```
-
-### if-elsif-else conditionals
-
-if:
-
-```
-if condition1 then
-  // statement1
-  // statement2
-end
-```
-
-if + else:
-
-```
-if condition1 then
-  // statement1
-  // statement2
-else
-  // statement3
-end
-```
-
-if + elsif (+ elsif...) + else:
-
-```
-if condition1 then
-  // statement1
-  // statement2
-elsif condition2 then
-  // statement3
-  // statement4
-else
-  // statement5
-end
-```
-
-### repeat
-
-```
-repeat i from 0 to 10 do
-  // statement
-end
-```
-
-### size
-
-arguments: `width`, `height`
-
-```
-size width 600 height 600
-  // statement
-end
-```
-
-### group
-
-arguments: `positionX`, `positionY`, `rotate`, `scale`, `scaleX`, `scaleY`
-
-```
-group
-  // argument
-end
-```
-
-### rectangle
-
-arguments: `width`, `height`, `positionX`, `positionY`, `rotate`, `scale`, `scaleX`, `scaleY`
-
-```
-rectangle
-  width 200 height 200
-  positionX 0 positionY 0
-end
 ```
 
 ### TODO:

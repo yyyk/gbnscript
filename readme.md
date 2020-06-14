@@ -93,7 +93,7 @@ update a false
 update a true
 ```
 
-### comparator
+### comparison and logical operations
 
 ```
 not a
@@ -232,9 +232,7 @@ arguments: `positionX`, `positionY`, `rotate`, `scale`, `scaleX`, `scaleY`
 
 ```
 group
-
 end
-
 ```
 
 ### rectangle

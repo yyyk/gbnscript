@@ -2,6 +2,8 @@
 
 is a domain-specific language for [Grid By Numbers](https://grid-by-numbers.netlify.app).
 
+Built in [Typescript](https://www.typescriptlang.org/)
+
 ## examples
 
 ### 1 (blank canvas)

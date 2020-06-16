@@ -1,6 +1,6 @@
 # gbnscript
 
-is a domain-specific language for Grid By Numbers.
+is a domain-specific language for [Grid By Numbers](https://grid-by-numbers.netlify.app).
 
 ## examples
 

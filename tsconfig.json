@@ -5,14 +5,21 @@
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "dist",
     "sourceMap": true,
     "strictNullChecks": true,
-    "target": "es2015",
-    "declaration": true
+    "target": "ES6",
+    "declaration": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "incremental": true,
+    "rootDir": "./src",
+    "outDir": "dist",
+    "declarationDir": "dist/declarations"
   },
   "exclude": [
     "node_modules",
-    "**/__tests__/*.ts"
+    "**/__tests__/*.ts",
+    "dist"
   ]
 }

@@ -249,9 +249,11 @@ scaleY
 
 ### TODO:
 
+- add `line fromX {number} fromY {number} toX {number} toY {number} end` for drawing lines
+- maths functions `sin` and `cos` as prefix expression
+- maths functions `floor`, `ceil`, `round` as prefix expression
 - put all the error messages in `error.ts`
+- print function for logging purpose
 - setting color
 - step option for `repeat`
-- print function for logging purpose
-- maths functions `floor`, `ceil`, `round` as prefix expression
 - string literal
